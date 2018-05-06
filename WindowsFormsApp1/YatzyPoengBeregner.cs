@@ -77,6 +77,7 @@ namespace WindowsFormsApp1
             return sum;
         }
 
+ 
         public string[] splitString(string kast)
         {
             string[] kastArray = kast.Split(',');
