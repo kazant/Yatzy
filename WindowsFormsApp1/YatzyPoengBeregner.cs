@@ -5,6 +5,7 @@ namespace WindowsFormsApp1
 {
     public class YatzyPoengBeregner
     {
+
         public int BeregnPoeng(string kast, Kategori kategori) {
             YatzyKategoriBeregner resultat = new YatzyKategoriBeregner();
             int sum = 0;
