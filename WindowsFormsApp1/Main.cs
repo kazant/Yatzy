@@ -5,7 +5,7 @@ using static WindowsFormsApp1.YatzyKategoriBeregner;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         private const int CHECKBOXNUMMEREN = 0;
         private const int CHECKBOXNUMMERTO = 1;
@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         private YatzyPoengBeregner yatzyPoengBeregner = new YatzyPoengBeregner();
         private string kast = "";
        
-        public Form1()
+        public Main()
         {
             InitializeComponent();
 

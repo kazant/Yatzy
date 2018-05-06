@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -266,7 +266,6 @@
             this.lblEnere.Size = new System.Drawing.Size(35, 13);
             this.lblEnere.TabIndex = 21;
             this.lblEnere.Text = "Enere";
-            
             // 
             // label2
             // 
@@ -433,7 +432,6 @@
             this.lblSumLitenStraight.Name = "lblSumLitenStraight";
             this.lblSumLitenStraight.Size = new System.Drawing.Size(0, 13);
             this.lblSumLitenStraight.TabIndex = 47;
-           
             // 
             // lblSumFireLike
             // 
@@ -626,7 +624,6 @@
             this.chBoxHold5.TabIndex = 63;
             this.chBoxHold5.Text = "Hold!";
             this.chBoxHold5.UseVisualStyleBackColor = true;
-           
             // 
             // btnGetMax
             // 
@@ -672,7 +669,7 @@
             this.lblSumGetMax.Size = new System.Drawing.Size(0, 13);
             this.lblSumGetMax.TabIndex = 68;
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -740,8 +737,8 @@
             this.Controls.Add(this.btnToere);
             this.Controls.Add(this.btnEnere);
             this.Controls.Add(this.btnKast);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Main";
+            this.Text = "Yatzy!";
             ((System.ComponentModel.ISupportInitialize)(this.picTerning1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTerning2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTerning3)).EndInit();
