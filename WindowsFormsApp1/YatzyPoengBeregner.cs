@@ -90,7 +90,7 @@ namespace WindowsFormsApp1
             int kategorinr = 0;
             Resultat resultat = new Resultat();
 
-            for (int i = 0; i < 14; i++)
+            for (int i = 0; i < 15; i++)
             {
                 etResultat =  BeregnPoeng(kast, (Kategori)i + 1);
                 if (etResultat > sum) {
