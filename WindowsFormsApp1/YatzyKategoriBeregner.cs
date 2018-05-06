@@ -8,9 +8,8 @@ namespace WindowsFormsApp1
         public enum Kategori:int { Enere = 1, Toere, Treere, Firere, Femmere, Seksere, Par, ToPar, TreLike, FireLike, LitenStraigt, StorStraight, FulltHus, Sjanse, Yatzy };
 
         public int[] KategoriserTerninger( string[] kast) {
-
-
             int[] nyKastint = new int[6];
+      
             for (int i = 0; i < kast.Length; i++)
             {
 
@@ -52,8 +51,7 @@ namespace WindowsFormsApp1
                 {
                     sum += Int32.Parse(kast[i]);
                 }
-            }
-            
+            }          
             return sum;
         }
 
@@ -98,6 +96,7 @@ namespace WindowsFormsApp1
         {
             int sum = 0;
             var terninger = KategoriserTerninger(kast);
+
             for (int i = 0; i < terninger.Length; i++)
             {
                 if (terninger[i] >= 3)
@@ -112,6 +111,7 @@ namespace WindowsFormsApp1
         {
             int sum = 0;
             var terninger = KategoriserTerninger(kast);
+
             for (int i = 0; i < terninger.Length; i++)
             {
                 if (terninger[i] >= 4)
@@ -127,6 +127,7 @@ namespace WindowsFormsApp1
             int sum = 0;
             int teller = 0;
             var terninger = KategoriserTerninger(kast);
+
             for (int i = 0; i < terninger.Length -1; i++)
             {
                 if (terninger[i] == 1)
@@ -146,6 +147,7 @@ namespace WindowsFormsApp1
             int sum = 0;
             int teller = 0;
             var terninger = KategoriserTerninger(kast);
+
             for (int i = 1; i < terninger.Length; i++)
             {
                 if (terninger[i] == 1)
@@ -168,6 +170,7 @@ namespace WindowsFormsApp1
             int terningVerdiVedTreLike = 0;
             int terningverdiVedToLike = 0;
             var terninger = KategoriserTerninger(kast);
+
             for (int i = 0; i < terninger.Length; i++)
             {
                 if (terninger[i] == 3)
@@ -194,6 +197,7 @@ namespace WindowsFormsApp1
         {
             int sum = 0;
             var terninger = KategoriserTerninger(kast);
+
             for (int i = 0; i < terninger.Length; i++)
             {
                 sum += terninger[i] * (i+1);
@@ -205,6 +209,7 @@ namespace WindowsFormsApp1
         {
             int sum = 0;
             var terninger = KategoriserTerninger(kast);
+
             for (int i = 0; i < terninger.Length; i++)
             {
                 if (terninger[i] == 5)

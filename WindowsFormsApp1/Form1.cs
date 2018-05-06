@@ -5,7 +5,6 @@ using static WindowsFormsApp1.YatzyKategoriBeregner;
 
 namespace WindowsFormsApp1
 {
-
     public partial class Form1 : Form
     {
         private const int CHECKBOXNUMMEREN = 0;
@@ -17,23 +16,17 @@ namespace WindowsFormsApp1
         private String[] bildepath = { @"..\Image\1.jpg", @"..\Image\2.jpg", @"..\Image\3.jpg", @"..\Image\4.jpg", @"..\Image\5.jpg", @"..\Image\6.jpg" };
         private int teller = 0;
         private int[] terninger = new int[5];
-
         private int[] sum = new int[14];
         private int totalsum = 0;
         private Random r = new Random();
         private YatzyPoengBeregner yatzyPoengBeregner = new YatzyPoengBeregner();
-        
-        string kast = "";
+        private string kast = "";
        
-
         public Form1()
         {
             InitializeComponent();
+
         }
-
-        
-
-     
 
         private void Kast_Click(object sender, EventArgs e)
         {
@@ -78,9 +71,6 @@ namespace WindowsFormsApp1
             picTerning3.Image = Image.FromFile(bildepath[terninger[2] - 1]);
             picTerning4.Image = Image.FromFile(bildepath[terninger[3] - 1]);
             picTerning5.Image = Image.FromFile(bildepath[terninger[4] - 1]);
-
-            //lås opp mulgheten til å velge hvor du vil sette en sum
-            
 
             teller++;
             totalsum = 0;

@@ -5,12 +5,11 @@ namespace WindowsFormsApp1
 {
     public class YatzyPoengBeregner
     {
-
         public int BeregnPoeng(string kast, Kategori kategori) {
-
             YatzyKategoriBeregner resultat = new YatzyKategoriBeregner();
             int sum = 0;
             string[] cleanKast = splitString(kast);
+
             switch (kategori)
             {
                 case Kategori.Enere:
@@ -73,7 +72,6 @@ namespace WindowsFormsApp1
                     {
                        return sum = resultat.getYatzy(cleanKast);
                     }
-
             }
             return sum;
         }
@@ -87,11 +85,11 @@ namespace WindowsFormsApp1
 
 
         public Resultat Max(string kast) {
-
             int etResultat;
             int sum = 0;
             int kategorinr = 0;
-            
+            Resultat resultat = new Resultat();
+
             for (int i = 0; i < 14; i++)
             {
                 etResultat =  BeregnPoeng(kast, (Kategori)i + 1);
@@ -99,13 +97,10 @@ namespace WindowsFormsApp1
                     sum = etResultat;
                     kategorinr = i+1;
                 }
-            }
-            Resultat resultat = new Resultat();
+            }       
             resultat.sum = sum;
             resultat.kategori = (Kategori)kategorinr;
             return resultat;
-        }
-
-            
+        }           
     }
 }
